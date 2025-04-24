@@ -23,5 +23,5 @@ echo "version: $ver"
 echo "tar url: $url"
 echo " sha256: $sum"
 
-cd "$(dirname "$0")/../../../../.."
+cd "$(dirname "$0")/../../../.."
 update-source-version vmware-horizon-client.unwrapped "$ver" "$sum" "$url"
