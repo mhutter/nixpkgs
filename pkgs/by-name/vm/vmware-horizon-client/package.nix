@@ -12,7 +12,7 @@
   configText ? "",
 }:
 let
-  version = "2406";
+  version = "2503";
 
   sysArch =
     if stdenv.hostPlatform.system == "x86_64-linux" then
@@ -39,8 +39,8 @@ let
     pname = "vmware-horizon-files";
     inherit version;
     src = fetchurl {
-      url = "https://download3.omnissa.com/software/CART25FQ2_LIN_2406_TARBALL/VMware-Horizon-Client-Linux-2406-8.13.0-9995429239.tar.gz";
-      sha256 = "d6bae5cea83c418bf3a9cb884a7d8351d8499f1858a1ac282fd79dc0c64e83f6";
+      url = "https://download3.omnissa.com/software/CART26FQ1_LIN_2503_TARBALL/Omnissa-Horizon-Client-Linux-2503-8.15.0-14256322247.tar.gz";
+      sha256 = "c7df084d717dc70ce53eadfbe5a9d0daa06931b640702a8355705fbd93e16bb4";
     };
     nativeBuildInputs = [ makeWrapper ];
     installPhase = ''
